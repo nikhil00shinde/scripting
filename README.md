@@ -1,25 +1,16 @@
-#### Scripting
+## Shell Scripting
 
-## Github
-- Create a script that will check the untracked, modify files by providing output or arguments
-- **Concept used:**
-```bash
-if [ condition]; do
-fi
-```
-```bash
-if [condition]; do 
-elif [condition]; do
-else 
-fi
-```
-```
-while [condition]; do
-done
+### Level 1 
 
-for i in "${!myfiles[@]}"; do
-    echo "$myfiles[$i]"
-done
-```
+##### System Info Script
+**Goal**: Print system daily neatly.
+**concepts**: Variables,`echo`, command substitution, text formatting
+**Commands:**
+	- `uname`
+	- `hostname`
+	- `uptime`
+	- `free -h`
+	- `df -h`
+	- `who`
 
 
