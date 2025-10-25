@@ -22,4 +22,21 @@ for i in "${!myfiles[@]}"; do
 done
 ```
 
+```
+variable="${something:-default_value}"
+```
+This is called parameter expansion in Bash.
+It means:
+
+“If something has a value, use it.
+Otherwise, use the default_value.”
+
+```sh
+if [ -t 1 ] --- Only use colors if writing to terminal
+
+tput setaf N --- Sets terminal color (foreground)
+
+tput sgr0 --- Resets colors back to normal
+```
+
 
