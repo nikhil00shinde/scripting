@@ -13,6 +13,6 @@ done < ./files/data.txt
 # type echo
 
 # What command got forked?
-dtrace -n 'proc::::exec-success /progenyof($target)/ { trace(curpsinfo->pr_psargs); }' -c ./6.dtrace.sh
+#dtrace -n 'proc::::exec-success /progenyof($target)/ { trace(curpsinfo->pr_psargs); }' -c ./6.dtrace.sh
 
 # dtrace lets you trace what’s happening inside the system — system calls, function calls, I/O operations, CPU usage, etc.

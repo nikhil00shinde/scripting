@@ -1,0 +1,60 @@
+61227 execve("./6.dtrace.sh", ["./6.dtrace.sh"], 0x7ffe4e838c28 /* 40 vars */) = 0
+61227 execve("/var/home/nikhil/.local/bin/bash", ["bash", "./6.dtrace.sh"], 0x7ffd4aac1218 /* 40 vars */) = -1 ENOENT (No such file or directory)
+61227 execve("/var/home/nikhil/bin/bash", ["bash", "./6.dtrace.sh"], 0x7ffd4aac1218 /* 40 vars */) = -1 ENOENT (No such file or directory)
+61227 execve("/usr/local/bin/bash", ["bash", "./6.dtrace.sh"], 0x7ffd4aac1218 /* 40 vars */) = -1 ENOENT (No such file or directory)
+61227 execve("/usr/bin/bash", ["bash", "./6.dtrace.sh"], 0x7ffd4aac1218 /* 40 vars */) = 0
+61229 +++ exited with 0 +++
+61230 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "1"], 0x5593cd243bb0 /* 40 vars */) = 0
+61230 +++ exited with 0 +++
+61228 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61229, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61228 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61228, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61232 +++ exited with 0 +++
+61233 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "2"], 0x5593cd243bb0 /* 40 vars */) = 0
+61233 +++ exited with 0 +++
+61231 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61232, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61231 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61231, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61235 +++ exited with 0 +++
+61236 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "3-"], 0x5593cd243bb0 /* 40 vars */) = 0
+61236 +++ exited with 0 +++
+61234 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61235, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61234 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61234, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61238 +++ exited with 0 +++
+61239 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "1"], 0x5593cd243bb0 /* 40 vars */) = 0
+61239 +++ exited with 0 +++
+61237 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61238, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61237 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61237, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61241 +++ exited with 0 +++
+61242 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "2"], 0x5593cd243bb0 /* 40 vars */) = 0
+61242 +++ exited with 0 +++
+61240 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61241, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61240 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61240, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61244 +++ exited with 0 +++
+61245 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "3-"], 0x5593cd243bb0 /* 40 vars */) = 0
+61245 +++ exited with 0 +++
+61243 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61244, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61243 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61243, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61247 +++ exited with 0 +++
+61248 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "1"], 0x5593cd243bb0 /* 40 vars */) = 0
+61248 +++ exited with 0 +++
+61246 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61247, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61246 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61246, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61250 +++ exited with 0 +++
+61251 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "2"], 0x5593cd243bb0 /* 40 vars */) = 0
+61251 +++ exited with 0 +++
+61249 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61250, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61249 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61249, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61253 +++ exited with 0 +++
+61254 execve("/usr/bin/cut", ["cut", "-d", ":", "-f", "3-"], 0x5593cd243bb0 /* 40 vars */) = 0
+61254 +++ exited with 0 +++
+61252 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61253, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61252 +++ exited with 0 +++
+61227 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=61252, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+61227 +++ exited with 0 +++
