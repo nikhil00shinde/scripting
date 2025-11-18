@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Input file containing IP addresses
-INPUT_FILE="$HOME/1.Learning/scripting/DevopsScripting/sample.txt"
-
+INPUT_FILE="$(pwd)/sample.txt"
+echo $INPUT_FILE
 # function to validate an IP addresses
 
 validate_ip() {
