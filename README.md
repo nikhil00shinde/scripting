@@ -1,5 +1,10 @@
 ## Shell Scripting
 
+```
+CREDIT
+https://github.com/ruanyf/simple-bash-scripts/
+```
+
 ### Level 1 
 
 ##### System Info Script
