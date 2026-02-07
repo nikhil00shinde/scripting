@@ -32,13 +32,21 @@ echo "Network summary:"
 ss -s 
 echo 
 
-echo "Network summary:"
-ss -s 
-echo 
-
 echo "Running processes:"
 ps aux --sort=%cpu | head -10
 echo 
 
 echo "System stats (vmstat):"
 vmstat 1 5
+echo 
+
+echo "Memory:"
+free -m | xargs | awk '{print "Free/total Memory: " $17 " / " $8 " MB"}'
+echo 
+
+echo "Out of Memory detection:"
+start_log=$(head -1 /var/log/messages | cut -x 1-12)
+oom=$(grep -ci kill /var/log/messages)
+echo -n "OOM errors since $start_log : " $oom
+echo 
+
