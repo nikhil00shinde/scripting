@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 MAX=10
 EMAIL=server@127.0.0.1
 
@@ -9,4 +9,3 @@ if [ $USE -gt $MAX ]; then
 else 
   echo "Percent used: $USE"
 fi
-
