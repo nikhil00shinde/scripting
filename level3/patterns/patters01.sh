@@ -102,6 +102,55 @@ case "$choice" in
      done
   ;;
   9) echo "Pattern 4"
+    x=01234567899876543210
+    y=$x
+    echo ".......... x = $x , y=$x"
+    i=0
+    while [ ${#x} -gt 0 ]; do 
+      printf "x = [${x}] ::: [${y}]\n"
+      x=${x%[0-9]}
+      y=${y#[0-9]}
+    done
+  ;;
+  10) echo "F to C"
+    read -p "Give fh: " f 
+    c=$(( (f-32) * 5 / 9))
+    echo ${c}
+  ;;
+  11) echo "List content of the dir content - total dir total files "
+    echo "read -n 1 -p ?"
+  ;; 
+  12) echo "lsize.sh" 
+    echo "Detect and input validation, directory & file information "
+    echo "du ls command" 
+    echo "size (ascending order) --dir-- filename (before and after)"
+
+  ;; 
+  13)
+   echo "Refer camera"
+   echo "Directory info but more detailed "
+  ;;
+  14)
+    echo "String operators"
+    a="love"
+    b"stroy"
+    c="qw dojf"
+    d=${a}-${b}
+  ;; 
+  15)
+    echo "print a to z format [%s] left justified -- 1"
+    echo "print left and right justified bothj -- 2 -- format [%-26s] [%26s]"
+    echo "Strip the subdirectory path do both left and right justfied ()"
+    echo "Floating point computation: $(bc )"
+    bc -q -l << EOF 
+    scale=${precision}
+    print "$* = "
+    $*
+    quit
+   EOF
+   echo "scrath.sh if file exists"
+   echo "stamp.sh rename the file (date-filename)"
+
   ;;
   *) echo default
   ;;
