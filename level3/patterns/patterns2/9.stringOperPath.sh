@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # =============================================================================
-# 2_string_operators.sh — Bash String Operators
 # Covers: length, substring, prefix strip, suffix strip
 # =============================================================================
 
