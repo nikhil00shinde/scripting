@@ -1,0 +1,42 @@
+
+date1=$(shell date)
+# default :  rule1  rule2
+default : 
+	@echo "rule 1 : make r1"
+	@echo "rule 2 : make r2"
+	@echo "rule 3 : make r3"
+	@echo "rule 4 : make r4"
+
+r0 :
+	@printf "This is rule 1\n"
+	@ echo "Date : [ $(date) ]"
+
+
+r1 :
+	@ printf "\n"
+	@ printf " .........x=without quotes...........\n"
+	 - x=$(date);y=5
+	 - printf "Date: [$${x}] and y=$${y}\n"
+	@ printf "\n"
+
+r2:
+	@ printf "\n"
+	@ printf "................x=without quotes... (all in 1 sub-shell)......"
+	 - x=$(date1);y=5; printf "Date: [$${x}] and y=[$${y}]\n"
+	@printf "\n"
+
+r3:
+	@ printf "\n"
+	@ printf "...................\n"
+	@ printf "...........x=with quotes........\n"
+	 - x="$(date1)";y=5
+	 - printf "Date: [$${x}] and y=$${y}\n"
+	@ printf "\n"
+
+r4:
+	@ printf "\n"
+	@printf "........................................\n"
+	@    printf ".............x=with  quotes... (all in 1 subshell)"
+	@printf "........................................\n"
+	 - x="$(date1)";y=5; printf "Date: [$${x}] and y=[$${y}]\n"
+	@printf "\n"

@@ -18,4 +18,5 @@ rule3 : rule1 #prerequisites
 	@ printf " this is the second line of rule 3 \n"
 	@ echo
 
-
+r0:
+	@echo "Date : [ $(shell date) ]"
